@@ -387,7 +387,7 @@ for col, member in zip(cols, team_members):
 # FUTURE GOALS
 # ══════════════════════════════════════════════════════════
 st.markdown("---")
-st.markdown("<div class='section-heading'>🚀 Further Enhancements</div>", unsafe_allow_html=True)
+st.markdown("<div class='section-heading'>FUTURE GOALS</div>", unsafe_allow_html=True)
 
 enhancements = [
     ("🌍", "**Multi-language TTS** — Let users choose their preferred spoken language (Urdu, Arabic, French, etc.) so the tool is accessible worldwide."),
