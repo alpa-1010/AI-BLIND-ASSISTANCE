@@ -265,7 +265,7 @@ with st.sidebar:
         st.markdown(f"{icon} **{name}**")
 
     st.markdown("---")
-    st.caption(f"AI Blind Assistance · v{APP_VERSION}")
+    st.caption(f"AI Blind Assistance · v{426.001}")
 
 
 # ══════════════════════════════════════════════════════════
@@ -365,10 +365,10 @@ st.markdown("---")
 st.markdown("<div class='section-heading'>👥 Meet the Team</div>", unsafe_allow_html=True)
 
 team_members = [
-    {"name": "Muhammad Ahmad Shoaib", "role": "AI / ML Engineer", "emoji": "🧑‍💻"},
-    {"name": "Osama Saeed",           "role": "Computer Vision",    "emoji": "🧑‍🔬"},
-    {"name": "Ahmed Shafique Lone",   "role": "Backend Developer",  "emoji": "🧑‍💻"},
-    {"name": "Afzaal Ur Rahman",      "role": "UI / UX Designer",   "emoji": "🎨"},
+    {"name": "Muhammad Ahmad Shoaib", "role": "Group Leader & ML Development", "emoji": "🧑‍💻"},
+    {"name": "Osama Saeed",           "role": "UI/UX Design & Documentation",    "emoji": "🧑‍🔬"},
+    {"name": "Ahmed Shafique Lone",   "role": "ML Development",  "emoji": "🧑‍💻"},
+    {"name": "Afzaal Ur Rahman",      "role": "ML Development",   "emoji": "🎨"},
 ]
 
 cols = st.columns(len(team_members), gap="medium")
@@ -384,7 +384,7 @@ for col, member in zip(cols, team_members):
 
 
 # ══════════════════════════════════════════════════════════
-# FURTHER ENHANCEMENTS SECTION
+# FUTURE GOALS
 # ══════════════════════════════════════════════════════════
 st.markdown("---")
 st.markdown("<div class='section-heading'>🚀 Further Enhancements</div>", unsafe_allow_html=True)
@@ -419,6 +419,6 @@ st.markdown("</div>", unsafe_allow_html=True)
 st.markdown("""
 <div class='footer'>
     Built with ❤️ by the AI Blind Assistance Team &nbsp;·&nbsp;
-    Powered by YOLOv8 &amp; Streamlit &nbsp;·&nbsp; 2024
+    Powered by YOLOv8 &amp; Streamlit &nbsp;·&nbsp; 2026
 </div>
 """, unsafe_allow_html=True)
