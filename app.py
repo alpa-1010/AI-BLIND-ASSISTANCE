@@ -362,13 +362,13 @@ if camera_image is not None:
 # TEAM SECTION
 # ══════════════════════════════════════════════════════════
 st.markdown("---")
-st.markdown("<div class='section-heading'>👥 Meet the Team</div>", unsafe_allow_html=True)
+st.markdown("<div class='section-heading'>👥 Meet our Team</div>", unsafe_allow_html=True)
 
 team_members = [
     {"name": "Muhammad Ahmad Shoaib", "role": "Group Leader & ML Development", "emoji": "🧑‍💻"},
-    {"name": "Osama Saeed",           "role": "UI/UX Design & Documentation",    "emoji": "🧑‍🔬"},
+    {"name": "Osama Saeed",           "role": "UI/UX Design & Documentation",    "emoji": "🎨"},
     {"name": "Ahmed Shafique Lone",   "role": "ML Development",  "emoji": "🧑‍💻"},
-    {"name": "Afzaal Ur Rahman",      "role": "ML Development",   "emoji": "🎨"},
+    {"name": "Afzaal Ur Rahman",      "role": "ML Development",   "emoji": "🧑‍💻"},
 ]
 
 cols = st.columns(len(team_members), gap="medium")
