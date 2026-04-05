@@ -392,7 +392,7 @@ st.markdown("<div class='section-heading'>🚀 Further Enhancements</div>", unsa
 enhancements = [
     ("🌍", "**Multi-language TTS** — Let users choose their preferred spoken language (Urdu, Arabic, French, etc.) so the tool is accessible worldwide."),
     ("📍", "**Spatial audio & distance estimation** — Use depth cues or stereo audio panning to indicate how far away and in which direction objects are."),
-    ("🎙️", "**Voice commands** — Allow users to ask questions like "What's in front of me?" using a speech-to-text loop for a hands-free experience."),
+    ("🎙️", "**Voice commands** — Allow users to ask questions like \"What's in front of me?\" using a speech-to-text loop for a hands-free experience."),
     ("📱", "**Mobile-first PWA** — Package the app as a Progressive Web App so it installs on phones and runs offline with a native-app feel."),
     ("⚡", "**Edge inference** — Deploy a quantised YOLO model directly on-device (iOS/Android via CoreML / TFLite) for zero-latency, no-internet detection."),
     ("🗺️", "**Obstacle navigation** — Integrate GPS and an indoor mapping layer to guide users through routes and warn about upcoming hazards."),
