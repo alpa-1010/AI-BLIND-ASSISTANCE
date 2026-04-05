@@ -7,6 +7,13 @@ from gtts import gTTS
 import collections
 import io
 
+# --- 0. CONSTANTS ---
+APP_VERSION = "1.0"
+DEFAULT_CONFIDENCE = 0.4
+CONFIDENCE_MIN = 0.1
+CONFIDENCE_MAX = 1.0
+CONFIDENCE_STEP = 0.05
+
 # --- 1. PAGE CONFIGURATION & CUSTOM CSS ---
 st.set_page_config(
     page_title="AI Blind Assistance",
@@ -228,7 +235,10 @@ with st.sidebar:
 
     confidence_threshold = st.slider(
         "Detection Confidence",
-        min_value=0.1, max_value=1.0, value=0.4, step=0.05,
+        min_value=CONFIDENCE_MIN,
+        max_value=CONFIDENCE_MAX,
+        value=DEFAULT_CONFIDENCE,
+        step=CONFIDENCE_STEP,
         help="Minimum confidence score for a detection to be reported."
     )
     audio_speed = st.toggle("Slow speech", value=False)
@@ -255,7 +265,7 @@ with st.sidebar:
         st.markdown(f"{icon} **{name}**")
 
     st.markdown("---")
-    st.caption("AI Blind Assistance · v1.0")
+    st.caption(f"AI Blind Assistance · v{APP_VERSION}")
 
 
 # ══════════════════════════════════════════════════════════
