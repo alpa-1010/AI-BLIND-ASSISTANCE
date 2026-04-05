@@ -274,7 +274,7 @@ with st.sidebar:
 st.markdown("""
 <div class='hero'>
     <div class='hero-badge'>AI · Accessibility · Vision</div>
-    <div class='hero-title'>👁️ AI Environment Scanner</div>
+    <div class='hero-title'>👁️ OBJECT DETECTION WITH VOICE FEEDBACK</div>
     <div class='hero-subtitle'>
         Empowering the visually impaired with real-time object detection and
         natural voice feedback — powered by YOLOv8.
