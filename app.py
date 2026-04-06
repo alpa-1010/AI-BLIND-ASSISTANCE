@@ -419,6 +419,7 @@ st.markdown("</div>", unsafe_allow_html=True)
 st.markdown("""
 <div class='footer'>
     Built with ❤️ by the AI Blind Assistance Team &nbsp;·&nbsp;
-    Powered by YOLOv8 &amp; Streamlit &nbsp;·&nbsp; 2026
+    Powered by YOLOv12 &amp; Streamlit &nbsp;·&nbsp; 2026
+    Samsung Innovation Campus (AI Training Final Capstone) &nbsp;·&nbsp;
 </div>
 """, unsafe_allow_html=True)
