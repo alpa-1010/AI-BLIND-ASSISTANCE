@@ -277,7 +277,7 @@ st.markdown("""
     <div class='hero-title'>👁️ OBJECT DETECTION WITH VOICE FEEDBACK</div>
     <div class='hero-subtitle'>
         Empowering the visually impaired with real-time object detection and
-        natural voice feedback — powered by YOLOv8.
+        natural voice feedback — powered by YOLOv12.
     </div>
 </div>
 """, unsafe_allow_html=True)
@@ -390,16 +390,16 @@ st.markdown("---")
 st.markdown("<div class='section-heading'>FUTURE GOALS</div>", unsafe_allow_html=True)
 
 enhancements = [
-    ("🌍", "**Multi-language TTS** — Let users choose their preferred spoken language (Urdu, Arabic, French, etc.) so the tool is accessible worldwide."),
-    ("📍", "**Spatial audio & distance estimation** — Use depth cues or stereo audio panning to indicate how far away and in which direction objects are."),
-    ("🎙️", "**Voice commands** — Allow users to ask questions like \"What's in front of me?\" using a speech-to-text loop for a hands-free experience."),
-    ("📱", "**Mobile-first PWA** — Package the app as a Progressive Web App so it installs on phones and runs offline with a native-app feel."),
-    ("⚡", "**Edge inference** — Deploy a quantised YOLO model directly on-device (iOS/Android via CoreML / TFLite) for zero-latency, no-internet detection."),
-    ("🗺️", "**Obstacle navigation** — Integrate GPS and an indoor mapping layer to guide users through routes and warn about upcoming hazards."),
-    ("📖", "**Scene captioning** — Add a vision-language model (e.g. BLIP-2, LLaVA) to generate natural-language scene descriptions beyond simple object lists."),
-    ("🔔", "**Hazard alerts** — Prioritise and call out safety-critical objects (cars, fire, steps) with a distinct urgent tone before listing other items."),
-    ("🧏", "**Sign-language output** — Render detected text or descriptions as sign-language animations for deaf-blind users."),
-    ("📊", "**Usage dashboard** — Log detection history and display analytics (most common objects, session counts) to researchers and caregivers."),
+    ("🌍", "Multi-language TTS — Let users choose their preferred spoken language (Urdu, Arabic, French, etc.) so the tool is accessible worldwide."),
+    ("📍", "Spatial audio & distance estimation — Use depth cues or stereo audio panning to indicate how far away and in which direction objects are."),
+    ("🎙️", "Voice commands — Allow users to ask questions like \"What's in front of me?\" using a speech-to-text loop for a hands-free experience."),
+    ("📱", "Mobile-first PWA — Package the app as a Progressive Web App so it installs on phones and runs offline with a native-app feel."),
+    ("⚡", "Edge inference — Deploy a quantised YOLO model directly on-device (iOS/Android via CoreML / TFLite) for zero-latency, no-internet detection."),
+    ("🗺️", "Obstacle navigation — Integrate GPS and an indoor mapping layer to guide users through routes and warn about upcoming hazards."),
+    ("📖", "Scene captioning — Add a vision-language model (e.g. BLIP-2, LLaVA) to generate natural-language scene descriptions beyond simple object lists."),
+    ("🔔", "Hazard alerts — Prioritise and call out safety-critical objects (cars, fire, steps) with a distinct urgent tone before listing other items."),
+    ("🧏", "Sign-language output — Render detected text or descriptions as sign-language animations for deaf-blind users."),
+    ("📊", "Usage dashboard — Log detection history and display analytics (most common objects, session counts) to researchers and caregivers."),
 ]
 
 st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
