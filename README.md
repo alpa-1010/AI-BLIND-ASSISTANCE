@@ -93,7 +93,7 @@ gTTS (Google Text-to-Speech)  ──→  In-memory MP3  ──→  st.audio (aut
 | **Text-to-Speech** | [gTTS (Google Text-to-Speech)](https://gtts.readthedocs.io/) |
 | **Image Processing** | [OpenCV](https://opencv.org/), [NumPy](https://numpy.org/), [Pillow](https://python-pillow.org/) |
 | **Language** | Python 3.9+ |
-| **System Dependency** | `libgl1` (required by OpenCV on Linux) |
+| **System Dependency** | `libglib2.0-0`, `libgl1` (required by OpenCV on Linux; declared in `packages.txt` for Streamlit Community Cloud) |
 
 ---
 
@@ -118,7 +118,7 @@ source .venv/bin/activate        # Linux / macOS
 # .venv\Scripts\activate         # Windows
 
 # 3. Install system-level dependencies (Linux only)
-sudo apt-get update && sudo apt-get install -y libgl1
+sudo apt-get update && sudo apt-get install -y libglib2.0-0 libgl1
 
 # 4. Install Python dependencies
 pip install -r requirements.txt
@@ -133,6 +133,8 @@ streamlit run app.py
 Streamlit will print a local URL (default: `http://localhost:8501`). Open it in your browser, grant camera permission when prompted, and you're ready to go.
 
 > **Note:** On the first run, Ultralytics will automatically download the `yolov8n.pt` model weights (~6 MB).
+
+> **Streamlit Community Cloud deployment:** System-level OS packages are declared in `packages.txt` at the repo root. This file instructs Streamlit Cloud to install `libglib2.0-0` (GLib, which provides `libgthread-2.0.so.0`) and `libgl1` before starting the app. Without these libraries, importing `cv2` fails with an `ImportError` on the hosted Linux environment.
 
 ---
 
@@ -156,7 +158,7 @@ Streamlit will print a local URL (default: `http://localhost:8501`). Open it in 
 AI-BLIND-ASSISTANCE/
 ├── app.py              # Main Streamlit application (UI, model inference, TTS)
 ├── requirements.txt    # Python package dependencies
-├── packages.txt        # System-level apt packages (libgl1)
+├── packages.txt        # System-level apt packages (libglib2.0-0, libgl1)
 └── README.md           # Project documentation (this file)
 ```
 
